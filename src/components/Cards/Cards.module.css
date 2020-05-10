@@ -1,0 +1,17 @@
+.card {
+    margin: 2% 2% !important;
+}
+
+.card_1 {
+    border-bottom: 10px solid rgba(0, 0, 255, 0.5)
+}
+
+
+.card_2 {
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5)
+}
+
+
+.card_3 {
+    border-bottom: 10px solid rgba(255, 0, 0, 0.5)
+}
