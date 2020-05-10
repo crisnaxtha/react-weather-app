@@ -14,8 +14,8 @@ export const fetchData = async(city) => {
     }
 
     try {
-        const { data:{ main: { temp, feels_like, temp_min, temp_max, pressure, humidity }}}= await axios.get(`${url}${defaultCity}${apiKey}`); 
-        const modifiedData = { temp, pressure, humidity };
+        const { data:{ main: { temp, feels_like, temp_min, temp_max, pressure, humidity }, coord }}= await axios.get(`${url}${defaultCity}${apiKey}`); 
+        const modifiedData = { temp, pressure, humidity, coord};
         return modifiedData;
     } catch (error) {
         console.log(error);

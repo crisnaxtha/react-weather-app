@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.module.css';
-import { LocationSelector, Cards } from './components';
+import { LocationSelector, Cards, MapLayer } from './components';
 
 import { fetchData } from './api';
 
@@ -26,6 +26,7 @@ class App extends React.Component {
             <div className = { styles.container }>
                 <LocationSelector getCity = { this.getCity } />
                 <Cards data = { data } />
+                <MapLayer data = { data }/>
             </div>
         )
     }
